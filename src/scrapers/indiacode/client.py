@@ -1,15 +1,4 @@
-"""
-    A HTTP client with:
-      - Session reuse
-      - Retries with exponential backoff for transient errors
-      - Rate limiting (simple delay between calls)
-      - Optional robots.txt compliance
-      - Helpers for absolute URLs and HTML parsing
-"""
-
-
 from __future__ import annotations
-
 import time
 import logging
 import random
