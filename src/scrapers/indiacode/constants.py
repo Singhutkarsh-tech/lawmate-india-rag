@@ -49,19 +49,6 @@ DATE_FORMATS = [
     "%d-%B-%Y",  # e.g. 01-March-1950
 ]
 
-ACT_SCHEMA = {
-  "ministry": str,                 
-  "source_list_url": str,          
-  "enactment_date": str,           
-  "act_number": str,               
-  "short_title": str,              
-  "act_page_url": str,             
-  "pdf_url": str | None,          
-  "download_status": str,          
-  "pdf_local_path": str | None,    
-  "fetched_at": str,               
-  "notes": str | None,            
-}
 
 DEFAULT_TIMEOUT = (5, 25)  # (connect, read) seconds
 TIMEOUT_S = 20

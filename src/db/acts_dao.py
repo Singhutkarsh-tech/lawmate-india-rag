@@ -1,13 +1,13 @@
 import hashlib
 import json
-import datetime from datetime
+from datetime import datetime
 from .database import get_conn
 
 def md5_hash(value:str) -> str:
-    return hashlib.md5(value.encode('utf-8').hexdigest())
+    return hashlib.md5(value.encode('utf-8')).hexdigest()
 
-def insert_update_act(act):
-    act_id = md5_hash(f'{act['source_portal']}_{act["handel_id"]}')
+def insert_or_update_act(act):
+    act_id = md5_hash(f'{act["source_portal"]}_{act["handle_id"]}')
     act["id"] = act_id
     with get_conn() as conn:
         cursor = conn.cursor()
