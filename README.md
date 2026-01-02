@@ -45,6 +45,9 @@ src/
 ├── llm/                 # Llama-based answerer
 └── api/                 # FastAPI app
 
+## Architecture
+<img width="1666" height="771" alt="Screenshot 2026-01-02 at 12 58 06 PM" src="https://github.com/user-attachments/assets/c48f983d-eff8-4331-8390-dbe66e622ef2" />
+
 ---
 
 ## Tech Stack
